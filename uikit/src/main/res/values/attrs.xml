@@ -5,4 +5,9 @@
         <attr name="endText" format="string" />
         <attr name="iconResource" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="OptionItemView">
+        <attr name="optionTitleText" format="string" />
+        <attr name="optionIconResource" format="reference" />
+    </declare-styleable>
 </resources>

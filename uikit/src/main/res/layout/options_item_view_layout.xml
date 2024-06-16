@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/option_item_width_72"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:background="@color/black2">
+
+    <ImageView
+        android:id="@+id/iv_option_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        tools:src="@drawable/ic_complicated_route_48" />
+
+    <TextView
+        android:id="@+id/tv_option_title"
+        style="@style/FlightOne.Text.Medium.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        tools:text="[Сложный маршрут]" />
+
+</LinearLayout>
