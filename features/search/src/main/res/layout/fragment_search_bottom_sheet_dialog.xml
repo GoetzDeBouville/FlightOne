@@ -1,13 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical"
     tools:context=".ui.searchdialog.SearchBottomSheetDialogFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="SearchDialogFragment" />
+    <View
+        android:layout_width="@dimen/handler_width_36"
+        android:layout_height="@dimen/handler_height_4"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginBottom="@dimen/margin_24dp"
+        android:background="@drawable/bottom_sheet_hadler_background" />
 
-</FrameLayout>
+    <include
+        android:id="@+id/input_block"
+        layout="@layout/layout_input_block_dialog" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24dp"
+        android:orientation="horizontal">
+
+        <com.starbars.uikit.OptionItemView
+            android:id="@+id/oiv_complicated_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:optionIconResource="@drawable/ic_complicated_route_48"
+            app:optionTitleText="@string/search_dialog_complicated_route" />
+
+        <com.starbars.uikit.OptionItemView
+            android:id="@+id/oiv_anywhere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:optionIconResource="@drawable/ic_globe_48"
+            app:optionTitleText="@string/search_dialog_anywhere" />
+
+        <com.starbars.uikit.OptionItemView
+            android:id="@+id/oiv_weekends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_weight="1"
+            app:optionIconResource="@drawable/ic_calendar_48"
+            app:optionTitleText="@string/search_dialog_weekends" />
+
+        <com.starbars.uikit.OptionItemView
+            android:id="@+id/oiv_hot_flights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_weight="1"
+            app:optionIconResource="@drawable/ic_hot_flight_48"
+            app:optionTitleText="@string/search_dialog_hot_flights" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_popular_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:background="@drawable/input_group_background"
+        android:padding="@dimen/padding_16dp"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_famous_route" />
+
+</LinearLayout>

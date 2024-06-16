@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="handler_height_4">4dp</dimen>
     <dimen name="image_radius_16">16dp</dimen>
     <dimen name="card_radius_16">16dp</dimen>
+    <dimen name="handler_width_36">36dp</dimen>
+    <dimen name="image_size_40">40dp</dimen>
     <dimen name="action_item_radius_50">50dp</dimen>
+    <dimen name="option_item_width_72">72dp</dimen>
     <dimen name="offer_image_size_132">132dp</dimen>
 
     <dimen name="padding_8dp">8dp</dimen>
     <dimen name="padding_16dp">16dp</dimen>
     <dimen name="padding_32dp">32dp</dimen>
 
+    <dimen name="margin_4">4dp</dimen>
     <dimen name="margin_8dp">8dp</dimen>
     <dimen name="margin_16dp">16dp</dimen>
     <dimen name="margin_24dp">24dp</dimen>
