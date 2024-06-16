@@ -43,4 +43,12 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.koin)
+    implementation(libs.coil)
+    implementation(libs.bundles.retrofit)
+    implementation(libs.bundles.navigation)
+
+    implementation(project(":core:presentation"))
+    implementation(project(":uikit"))
 }

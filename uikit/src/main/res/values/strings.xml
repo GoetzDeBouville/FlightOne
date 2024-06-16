@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_screen_title">Поиск дешевых\nавиабилетов</string>
+    <string name="main_hint_dparture">Откуда - Москва</string>
+    <string name="main_hint_arrival">Куда - Турция</string>
+    <string name="main_price_from">от %1$s ₽</string>
+    <string name="main_header_concerts">Музыкально отлететь</string>
+
+    <string name="nav_main">Авиабилеты</string>
+    <string name="nav_hotels">Отели</string>
+    <string name="nav_geo">Короче</string>
+    <string name="nav_subscriptions">Подписки</string>
+    <string name="nav_profile">Профиль</string>
+</resources>
