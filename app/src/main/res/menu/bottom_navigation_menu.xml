@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/search_flights"
+        android:id="@+id/searchFragment"
         android:icon="@drawable/ic_plane_flight_24"
         android:orderInCategory="1"
         android:title="@string/nav_main" />
 
     <item
-        android:id="@+id/hotels"
+        android:id="@+id/hotelsFragment"
         android:icon="@drawable/ic_hotels_24"
         android:orderInCategory="2"
         android:title="@string/nav_hotels" />
 
     <item
-        android:id="@+id/recommendations"
+        android:id="@+id/recomendationsFragment"
         android:icon="@drawable/ic_geo_point_24"
         android:orderInCategory="3"
         android:title="@string/nav_geo" />
 
     <item
-        android:id="@+id/subscriptions"
+        android:id="@+id/subscriptionsFragment"
         android:icon="@drawable/ic_bell_24"
         android:orderInCategory="4"
         android:title="@string/nav_subscriptions" />
 
 
     <item
-        android:id="@+id/profile"
+        android:id="@+id/profileFragment"
         android:icon="@drawable/ic_person_24"
         android:orderInCategory="5"
         android:title="@string/nav_profile" />

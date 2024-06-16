@@ -52,5 +52,9 @@ dependencies {
     implementation(libs.koin)
     implementation(libs.bundles.navigation)
 
+    implementation(project(":features:hotels"))
+    implementation(project(":features:profile"))
+    implementation(project(":features:recomedations"))
     implementation(project(":features:search"))
+    implementation(project(":features:subscriptions"))
 }
