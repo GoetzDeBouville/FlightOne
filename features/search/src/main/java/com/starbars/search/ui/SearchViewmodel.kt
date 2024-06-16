@@ -1,4 +1,4 @@
-package com.starbars.search
+package com.starbars.search.ui
 
 import com.starbars.presentation.BaseViewModel
 
