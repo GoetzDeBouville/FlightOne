@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FlightOne.Text" parent="TextAppearance.AppCompat" />
+
+    <style name="FlightOne.Text.Title">
+        <item name="fontFamily">@font/sf_pro_display_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="FlightOne.Text.Title.Italic">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+</resources>
