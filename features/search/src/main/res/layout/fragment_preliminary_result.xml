@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/black1"
+    tools:context=".ui.searchmain.SearchFragment">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_spacer_48" />
+
+    <include
+        android:id="@+id/input_block"
+        layout="@layout/layout_input_block_preliminary" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.starbars.uikit.ActionItemView
+                android:id="@+id/aiv_date_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:iconResource="@drawable/ic_plus_16"
+                app:itemTitleText="@string/preliminary_search_go_back" />
+
+            <com.starbars.uikit.ActionItemView
+                android:id="@+id/aiv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                app:endText="[, сб]"
+                app:itemTitleText="[24 фев]" />
+
+            <com.starbars.uikit.ActionItemView
+                android:id="@+id/aiv_configuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                app:iconResource="@drawable/ic_person_16"
+                app:itemTitleText="@string/preliminary_search_configuration" />
+
+            <com.starbars.uikit.ActionItemView
+                android:id="@+id/aiv_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                app:iconResource="@drawable/ic_filter_16"
+                app:itemTitleText="@string/preliminary_search_filter" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_ticket_offers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:background="@drawable/tickets_offer_list_backgrpund"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_16dp">
+
+        <TextView
+            style="@style/FlightOne.Text.Bold.MainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/preliminary_search_direct_flights"
+            android:textColor="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_ticket_offers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_flight_offers_details" />
+
+        <TextView
+            style="@style/FlightOne.Text.Bold.OfferTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_12dp"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:gravity="center"
+            android:paddingVertical="@dimen/margin_8dp"
+            android:text="@string/preliminary_search_show_all"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_40"
+        android:layout_marginTop="@dimen/margin_24dp"
+        android:background="@drawable/button_background_rounded_corners"
+        android:backgroundTint="@color/blue"
+        android:text="@string/preliminary_search_watch_all_tickets"
+        android:textAllCaps="false"
+        android:textAppearance="@style/FlightOne.Text.Bold.OfferTitle.Italic"
+        android:textColor="@color/white"
+        app:cornerRadius="@dimen/corner_radius_8"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24dp"
+        android:background="@drawable/backgrpund_gray_rounded_corners_8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:src="@drawable/ic_bell_24"
+            app:tint="@color/blue" />
+
+        <TextView
+            style="@style/FlightOne.Text.Bold.OfferTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:paddingVertical="@dimen/padding_16dp"
+            android:text="@string/preliminary_search_subscribe_on_price"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_8dp"
+            tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+</LinearLayout>

@@ -13,15 +13,15 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/iv_departure_plane"
+            android:id="@+id/iv_arrow_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginStart="@dimen/margin_8dp"
             android:contentDescription="@null"
-            android:src="@drawable/ic_plane_departure_24"
-            app:layout_constraintBottom_toBottomOf="@+id/et_departure_city"
+            android:src="@drawable/ic_arrow_back_24"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/et_departure_city" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/et_departure_city"
@@ -29,11 +29,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_8dp"
-            android:layout_marginEnd="@dimen/margin_16dp"
             android:hint="Москва"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/iv_departure_plane"
+            app:layout_constraintEnd_toStartOf="@+id/iv_revert"
+            app:layout_constraintStart_toEndOf="@+id/iv_arrow_back"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_revert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_revert_24"
+            app:layout_constraintBottom_toBottomOf="@+id/et_departure_city"
+            app:layout_constraintEnd_toEndOf="@+id/divider"
+            app:layout_constraintTop_toTopOf="@+id/et_departure_city" />
 
         <View
             android:id="@+id/divider"
@@ -42,20 +50,8 @@
             android:layout_marginEnd="@dimen/margin_16dp"
             android:background="@color/gray3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/iv_departure_plane"
+            app:layout_constraintStart_toStartOf="@id/et_departure_city"
             app:layout_constraintTop_toBottomOf="@id/et_departure_city" />
-
-        <ImageView
-            android:id="@+id/iv_search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_16dp"
-            android:contentDescription="@null"
-            android:src="@drawable/ic_search_24"
-            app:layout_constraintBottom_toBottomOf="@+id/et_arrival_city"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/et_arrival_city"
-            app:tint="@color/white" />
 
         <EditText
             android:id="@+id/et_arrival_city"
@@ -64,8 +60,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_8dp"
             android:hint="Куда - Турция"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/iv_cross"
-            app:layout_constraintStart_toEndOf="@id/iv_search"
+            app:layout_constraintStart_toEndOf="@id/iv_arrow_back"
             app:layout_constraintTop_toBottomOf="@id/et_departure_city" />
 
         <ImageView

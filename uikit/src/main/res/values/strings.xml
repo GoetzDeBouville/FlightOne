@@ -17,4 +17,13 @@
     <string name="search_dialog_anywhere">Куда угодно</string>
     <string name="search_dialog_weekends">Выходные</string>
     <string name="search_dialog_hot_flights">Горящие билеты</string>
+
+    <string name="preliminary_search_go_back">обратно</string>
+    <string name="preliminary_search_filter">фильтр</string>
+    <string name="preliminary_search_configuration">1, эконом</string>
+    <string name="preliminary_search_direct_flights">Прямые рейсы</string>
+    <string name="preliminary_search_show_all">Показать все</string>
+    <string name="preliminary_search_watch_all_tickets">Посмотреть все билеты</string>
+    <string name="preliminary_search_subscribe_on_price">Подписка на цену</string>
+
 </resources>
