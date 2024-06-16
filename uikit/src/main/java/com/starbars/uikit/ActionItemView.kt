@@ -15,20 +15,19 @@ class ActionItemView @JvmOverloads constructor(
     @AttrRes defStyleAttr: Int = 0,
     @StyleRes defStyleRes: Int = 0
 ) : LinearLayout(context, attrs, defStyleAttr, defStyleRes) {
-    private lateinit var titleTv: TextView
-    private lateinit var endTv: TextView
-    private lateinit var iconIv: ImageView
-
-    init {
-        initViews()
-        applyAttributes(context, attrs, defStyleAttr, defStyleRes)
+    private val titleTv: TextView by lazy {
+        findViewById(R.id.tv_action_title)
+    }
+    private val endTv: TextView by lazy {
+        findViewById(R.id.tv_end_text)
+    }
+    private val iconIv: ImageView by lazy {
+        findViewById(R.id.iv_action_view_icon)
     }
 
-    private fun initViews() {
+    init {
         LayoutInflater.from(context).inflate(R.layout.action_item_view_layout, this, true)
-        titleTv = findViewById(R.id.tv_action_title)
-        iconIv = findViewById(R.id.iv_action_view_icon)
-        endTv = findViewById(R.id.tv_end_text)
+        applyAttributes(context, attrs, defStyleAttr, defStyleRes)
     }
 
     private fun applyAttributes(
