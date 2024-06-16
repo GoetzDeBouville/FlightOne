@@ -1,4 +1,4 @@
-package com.starbars.search.ui
+package com.starbars.search.ui.searchmain
 
 import androidx.fragment.app.viewModels
 import com.starbars.presentation.BaseFragment

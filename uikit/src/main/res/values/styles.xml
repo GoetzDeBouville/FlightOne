@@ -3,13 +3,32 @@
 
     <style name="FlightOne.Text" parent="TextAppearance.AppCompat" />
 
-    <style name="FlightOne.Text.Title">
+    <style name="FlightOne.Text.Medium" parent="TextAppearance.AppCompat" >
         <item name="fontFamily">@font/sf_pro_display_medium</item>
+    </style>
+
+    <style name="FlightOne.Text.Bold" parent="TextAppearance.AppCompat" >
+        <item name="fontFamily">@font/sf_pro_display_semibold</item>
+    </style>
+
+    <style name="FlightOne.Text.Medium.Title">
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="FlightOne.Text.Title.Italic">
+    <style name="FlightOne.Text.Medium.Title.Italic">
         <item name="android:textStyle">italic</item>
     </style>
 
+    <style name="FlightOne.Text.Bold.MainTitle">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="FlightOne.Text.Bold.OfferTitle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="RoundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/image_radius_16</item>
+    </style>
 </resources>
