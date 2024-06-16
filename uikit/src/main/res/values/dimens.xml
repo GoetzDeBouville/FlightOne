@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="image_radius_16">16dp</dimen>
+    <dimen name="card_radius_16">16dp</dimen>
     <dimen name="action_item_radius_50">50dp</dimen>
     <dimen name="offer_image_size_132">132dp</dimen>
 
@@ -11,6 +12,7 @@
     <dimen name="margin_8dp">8dp</dimen>
     <dimen name="margin_16dp">16dp</dimen>
     <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_28dp">28dp</dimen>
     <dimen name="margin_32dp">32dp</dimen>
     <dimen name="margin_40dp">40dp</dimen>
     <dimen name="margin_64dp">64dp</dimen>

@@ -1,8 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
     tools:context=".ui.searchmain.SearchFragment">
 
-</FrameLayout>
+    <TextView
+        style="@style/FlightOne.Text.Bold.MainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_28dp"
+        android:text="@string/main_screen_title"
+        android:textColor="@color/white" />
+
+    <TextView
+        style="@style/FlightOne.Text.Bold.MainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/main_screen_title_tickets"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:background="@drawable/input_group_background"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_16dp">
+
+        <include
+            android:id="@+id/input_block"
+            layout="@layout/layout_input_block" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_header_concerts"
+        style="@style/FlightOne.Text.Bold.MainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:gravity="start"
+        android:text="@string/main_header_concerts"
+        android:textColor="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_concerts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_flight_offer"
+        tools:orientation="horizontal" />
+</LinearLayout>
