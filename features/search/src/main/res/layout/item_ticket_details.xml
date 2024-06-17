@@ -69,7 +69,7 @@
             android:layout_width="@dimen/divider_size_10"
             android:layout_height="1dp"
             android:layout_marginStart="@dimen/margin_4"
-            android:background="@color/gray5"
+            android:background="@color/gray7"
             app:layout_constraintBottom_toBottomOf="@id/tv_time_departure"
             app:layout_constraintStart_toEndOf="@id/tv_time_departure"
             app:layout_constraintTop_toTopOf="@id/tv_time_departure" />
@@ -92,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_4"
-            android:textColor="@color/gray5"
+            android:textColor="@color/gray7"
             app:layout_constraintStart_toStartOf="@id/tv_time_departure"
             app:layout_constraintTop_toBottomOf="@id/tv_time_departure"
             tools:text="[VKO]" />
@@ -103,7 +103,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_4"
-            android:textColor="@color/gray5"
+            android:textColor="@color/gray7"
             app:layout_constraintStart_toStartOf="@id/tv_time_arrival"
             app:layout_constraintTop_toBottomOf="@id/tv_time_departure"
             tools:text="[AER]" />

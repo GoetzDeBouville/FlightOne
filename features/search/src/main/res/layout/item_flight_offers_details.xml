@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/margin_8"
     android:paddingTop="@dimen/padding_8"
-    tools:background="@color/black3">
+    tools:background="@color/gray1">
 
     <ImageView
         android:id="@+id/iv_circle"
@@ -72,7 +72,7 @@
     <View
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:background="@color/gray3"
+        android:background="@color/gray5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
