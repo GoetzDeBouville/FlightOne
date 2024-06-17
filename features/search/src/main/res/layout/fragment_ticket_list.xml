@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/black1"
+    tools:context=".ui.tickets.TicketListFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/flight_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black3"
+        android:paddingVertical="@dimen/padding_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_tickets_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/blue" />
+
+        <TextView
+            android:id="@+id/tv_route"
+            style="@style/FlightOne.Text.Bold.OfferTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_tickets_arrow_back"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="[Москва-Сочи]" />
+
+
+        <TextView
+            android:id="@+id/tv_date_passenger"
+            style="@style/FlightOne.Text.Bold.OfferTitle.Italic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_4"
+            android:singleLine="true"
+            android:textColor="@color/gray4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_tickets_arrow_back"
+            app:layout_constraintTop_toBottomOf="@id/tv_route"
+            tools:text="[23 февраля, 1 пассажир]" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tickets"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flight_info"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_ticket_details" />
+</androidx.constraintlayout.widget.ConstraintLayout>

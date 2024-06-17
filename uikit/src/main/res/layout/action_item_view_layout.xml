@@ -6,7 +6,7 @@
     android:background="@drawable/action_item_background"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:padding="@dimen/padding_8dp">
+    android:padding="@dimen/padding_8">
 
     <ImageView
         android:id="@+id/iv_action_view_icon"
@@ -20,7 +20,7 @@
         style="@style/FlightOne.Text.Medium.Title.Italic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_marginStart="@dimen/margin_8"
         android:textColor="@color/white"
         tools:text="1, эконом" />
 

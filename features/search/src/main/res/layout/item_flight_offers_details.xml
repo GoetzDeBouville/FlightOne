@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/margin_8dp"
-    android:paddingTop="@dimen/padding_8dp"
+    android:layout_marginBottom="@dimen/margin_8"
+    android:paddingTop="@dimen/padding_8"
     tools:background="@color/black3">
 
     <ImageView
-        android:id="@+id/ic_circle"
+        android:id="@+id/iv_circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -29,7 +29,7 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/tv_departure_time_range"
         app:layout_constraintEnd_toStartOf="@id/tv_price"
-        app:layout_constraintStart_toEndOf="@id/ic_circle"
+        app:layout_constraintStart_toEndOf="@id/iv_circle"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="[Red wings]" />
 
@@ -57,15 +57,15 @@
         style="@style/FlightOne.Text.Medium.Title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_marginStart="@dimen/margin_8"
         android:layout_marginTop="@dimen/margin_4"
-        android:layout_marginBottom="@dimen/margin_8dp"
+        android:layout_marginBottom="@dimen/margin_8"
         android:ellipsize="end"
         android:maxLines="1"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/tv_price"
-        app:layout_constraintStart_toEndOf="@id/ic_circle"
+        app:layout_constraintStart_toEndOf="@id/iv_circle"
         app:layout_constraintTop_toBottomOf="@+id/tv_aircompany_name"
         tools:text="[11:00 18:00 19:00]" />
 

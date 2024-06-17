@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_16">
+
+    <TextView
+        android:id="@+id/tv_badge"
+        style="@style/FlightOne.Text.Medium.Title.Italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_rounded_corners"
+        android:elevation="2dp"
+        android:paddingHorizontal="@dimen/padding_8"
+        android:paddingVertical="2dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/cl_flight_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cl_flight_details"
+        tools:text="Самый удобный" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_flight_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgrpund_black_rounded_corners_8"
+        android:padding="@dimen/padding_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/FlightOne.Text.Bold.MainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="[6 990 ₽]" />
+
+        <ImageView
+            android:id="@+id/iv_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_colored_circle"
+            app:layout_constraintBottom_toBottomOf="@id/tv_departure_airport"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_time_departure" />
+
+        <TextView
+            android:id="@+id/tv_time_departure"
+            style="@style/FlightOne.Text.Medium.Title.Italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_16"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/iv_circle"
+            app:layout_constraintTop_toBottomOf="@id/tv_price"
+            tools:text="[17:00]" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="@dimen/divider_size_10"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/margin_4"
+            android:background="@color/gray5"
+            app:layout_constraintBottom_toBottomOf="@id/tv_time_departure"
+            app:layout_constraintStart_toEndOf="@id/tv_time_departure"
+            app:layout_constraintTop_toTopOf="@id/tv_time_departure" />
+
+        <TextView
+            android:id="@+id/tv_time_arrival"
+            style="@style/FlightOne.Text.Medium.Title.Italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_4"
+            android:layout_marginTop="@dimen/margin_16"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/divider"
+            app:layout_constraintTop_toBottomOf="@id/tv_price"
+            tools:text="[21:00]" />
+
+        <TextView
+            android:id="@+id/tv_departure_airport"
+            style="@style/FlightOne.Text.Medium.Title.Italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4"
+            android:textColor="@color/gray5"
+            app:layout_constraintStart_toStartOf="@id/tv_time_departure"
+            app:layout_constraintTop_toBottomOf="@id/tv_time_departure"
+            tools:text="[VKO]" />
+
+        <TextView
+            android:id="@+id/tv_arrival_airport"
+            style="@style/FlightOne.Text.Medium.Title.Italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4"
+            android:textColor="@color/gray5"
+            app:layout_constraintStart_toStartOf="@id/tv_time_arrival"
+            app:layout_constraintTop_toBottomOf="@id/tv_time_departure"
+            tools:text="[AER]" />
+
+        <TextView
+            android:id="@+id/tv_additionsl_info"
+            style="@style/FlightOne.Text.Medium.Title.Italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/tv_time_arrival"
+            app:layout_constraintTop_toTopOf="@id/tv_time_arrival"
+            tools:text="[4ч в пути/Без пересадок]" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

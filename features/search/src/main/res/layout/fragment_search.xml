@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/margin_28dp"
+        android:layout_marginTop="@dimen/margin_28"
         android:text="@string/main_screen_title"
         android:textColor="@color/white" />
 
@@ -28,10 +28,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_32dp"
+        android:layout_marginTop="@dimen/margin_32"
         android:background="@drawable/input_group_background"
         android:orientation="vertical"
-        android:padding="@dimen/padding_16dp">
+        android:padding="@dimen/padding_16">
 
         <include
             android:id="@+id/input_block"
@@ -44,7 +44,7 @@
         style="@style/FlightOne.Text.Bold.MainTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_32dp"
+        android:layout_marginTop="@dimen/margin_32"
         android:gravity="start"
         android:text="@string/main_header_concerts"
         android:textColor="@color/white" />
@@ -53,7 +53,7 @@
         android:id="@+id/rv_concerts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_24dp"
+        android:layout_marginTop="@dimen/margin_24"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:itemCount="4"
         tools:listitem="@layout/item_flight_offer"

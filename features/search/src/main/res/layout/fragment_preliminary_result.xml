@@ -19,7 +19,7 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_24dp">
+        android:layout_marginTop="@dimen/margin_24">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
                 android:id="@+id/aiv_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_8dp"
+                android:layout_marginStart="@dimen/margin_8"
                 app:endText="[, сб]"
                 app:itemTitleText="[24 фев]" />
 
@@ -45,7 +45,7 @@
                 android:id="@+id/aiv_configuration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_8dp"
+                android:layout_marginStart="@dimen/margin_8"
                 app:iconResource="@drawable/ic_person_16"
                 app:itemTitleText="@string/preliminary_search_configuration" />
 
@@ -53,7 +53,7 @@
                 android:id="@+id/aiv_filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_8dp"
+                android:layout_marginStart="@dimen/margin_8"
                 app:iconResource="@drawable/ic_filter_16"
                 app:itemTitleText="@string/preliminary_search_filter" />
         </LinearLayout>
@@ -63,10 +63,10 @@
         android:id="@+id/layout_ticket_offers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16"
         android:background="@drawable/tickets_offer_list_backgrpund"
         android:orientation="vertical"
-        android:padding="@dimen/padding_16dp">
+        android:padding="@dimen/padding_16">
 
         <TextView
             style="@style/FlightOne.Text.Bold.MainTitle"
@@ -87,10 +87,10 @@
             style="@style/FlightOne.Text.Bold.OfferTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_12dp"
-            android:layout_marginBottom="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_12"
+            android:layout_marginBottom="@dimen/margin_8"
             android:gravity="center"
-            android:paddingVertical="@dimen/margin_8dp"
+            android:paddingVertical="@dimen/margin_8"
             android:text="@string/preliminary_search_show_all"
             android:textColor="@color/blue"
             android:textStyle="bold" />
@@ -99,7 +99,7 @@
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="@dimen/button_height_40"
-        android:layout_marginTop="@dimen/margin_24dp"
+        android:layout_marginTop="@dimen/margin_24"
         android:background="@drawable/button_background_rounded_corners"
         android:backgroundTint="@color/blue"
         android:text="@string/preliminary_search_watch_all_tickets"
@@ -112,15 +112,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_24dp"
-        android:background="@drawable/backgrpund_gray_rounded_corners_8"
+        android:layout_marginTop="@dimen/margin_24"
+        android:background="@drawable/backgrpund_black_rounded_corners_8"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginStart="@dimen/margin_16"
             android:src="@drawable/ic_bell_24"
             app:tint="@color/blue" />
 
@@ -128,16 +128,16 @@
             style="@style/FlightOne.Text.Bold.OfferTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_marginStart="@dimen/margin_8"
             android:layout_weight="1"
-            android:paddingVertical="@dimen/padding_16dp"
+            android:paddingVertical="@dimen/padding_16"
             android:text="@string/preliminary_search_subscribe_on_price"
             android:textColor="@color/white" />
 
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/padding_8dp"
+            android:padding="@dimen/padding_8"
             tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
     </LinearLayout>
 </LinearLayout>
