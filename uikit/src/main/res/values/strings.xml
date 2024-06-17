@@ -26,4 +26,7 @@
     <string name="preliminary_search_watch_all_tickets">Посмотреть все билеты</string>
     <string name="preliminary_search_subscribe_on_price">Подписка на цену</string>
 
+    <string name="ticket_list_filter">Фильтр</string>
+    <string name="ticket_list_price_chart">График цен</string>
+
 </resources>
