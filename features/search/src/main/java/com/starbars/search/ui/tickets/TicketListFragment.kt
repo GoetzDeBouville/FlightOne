@@ -4,7 +4,8 @@ import androidx.fragment.app.viewModels
 import com.starbars.presentation.BaseFragment
 import com.starbars.search.databinding.FragmentTicketListBinding
 
-class TicketListFragment :
-    BaseFragment<FragmentTicketListBinding, TicketListViewModel>(FragmentTicketListBinding::inflate) {
+internal class TicketListFragment : BaseFragment<FragmentTicketListBinding, TicketListViewModel>(
+    FragmentTicketListBinding::inflate
+) {
     override val viewModel: TicketListViewModel by viewModels()
 }

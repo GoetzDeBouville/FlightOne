@@ -5,7 +5,7 @@ import com.starbars.presentation.BottomSheetBaseFragment
 import com.starbars.search.databinding.FragmentSearchBottomSheetDialogBinding
 
 
-class SearchBottomSheetDialogFragment :
+internal class SearchBottomSheetDialogFragment :
     BottomSheetBaseFragment<FragmentSearchBottomSheetDialogBinding, SearchDialogViewModel>(
         FragmentSearchBottomSheetDialogBinding::inflate
     ) {
