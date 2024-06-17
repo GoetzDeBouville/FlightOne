@@ -66,7 +66,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_32"
-        android:background="@drawable/background_gray_corner_radius_16"
+        android:background="@drawable/background_gray_rounded_corners_16"
         android:padding="@dimen/padding_16"
         tools:itemCount="5"
         tools:listitem="@layout/item_famous_route" />
