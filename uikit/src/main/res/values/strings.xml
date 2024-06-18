@@ -29,4 +29,6 @@
     <string name="ticket_list_filter">Фильтр</string>
     <string name="ticket_list_price_chart">График цен</string>
 
+    <string name="favorite_route">Популярное направление</string>
+
 </resources>

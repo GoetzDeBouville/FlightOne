@@ -50,5 +50,6 @@ dependencies {
     implementation(libs.bundles.navigation)
 
     implementation(project(":core:presentation"))
+    implementation(project(":core:util"))
     implementation(project(":uikit"))
 }

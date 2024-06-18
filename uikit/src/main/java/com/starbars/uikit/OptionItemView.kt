@@ -55,4 +55,6 @@ class OptionItemView @JvmOverloads constructor(
     fun setIconDrawable(iconId: Int) {
         iconIv.setImageResource(iconId)
     }
+
+    fun getText(): String = titleTv.text.toString()
 }

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/searchFragment">
+    app:startDestination="@id/search_nav_graph">
 
     <fragment
         android:id="@+id/searchFragment"
@@ -31,4 +31,5 @@
         android:label="HotelsFragment"
         tools:layout="@layout/fragment_hotels" />
 
+    <include app:graph="@navigation/search_nav_graph" />
 </navigation>
